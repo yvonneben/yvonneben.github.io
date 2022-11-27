@@ -7,16 +7,16 @@ Details of the template can be found below. Thanks to AJ for the wonderful work 
 
 ### Information on the template
 
-Template name: Editorial by HTML5 UP
+Template name: <a href= "https://html5up.net/editorial", target="_blank"> Editorial by HTML5 UP </a>
 
 Creator of the template: html5up.net | aj@lkn.io | @ajlkn
 
-License type: Free for personal and commercial use under the CCA 3.0 license (html5up.net/license). More information on the license file can also be viewed in <a href= #yvonneben.github.io/LICENSE.txt, target="_blank"> the license file </a>.
+License type: Free for personal and commercial use under the CCA 3.0 license (<a href="html5up.net/license", target="_blank"> view the license </a>). 
 
-Demo Images: Unsplash (unsplash.com)
+Demo Images: <a href="unsplash.com", target="_blank"> Unsplash </a>
 
-Icons: Font Awesome (fontawesome.io)
+Icons: <a href="fontawesome.io, target="_blank"> Font Awesome </a>
 
 Other:
-jQuery (jquery.com)
-Responsive Tools (github.com/ajlkn/responsive-tools)
+<a href="jquery.com", target="_blank"> jQuery </a> 
+<a href="github.com/ajlkn/responsive-tools", target="_blank"> Responsive Tools </a>
