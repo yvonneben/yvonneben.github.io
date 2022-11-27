@@ -11,7 +11,7 @@ Template name: Editorial by HTML5 UP
 
 Creator of the template: html5up.net | aj@lkn.io | @ajlkn
 
-License type: Free for personal and commercial use under the CCA 3.0 license (html5up.net/license). More information on the license file can also be viewed in <a href= #license.txt, target="_blank"> the license file </a>.
+License type: Free for personal and commercial use under the CCA 3.0 license (html5up.net/license). More information on the license file can also be viewed in <a href= #LICENSE.txt, target="_blank"> the license file </a>.
 
 Demo Images: Unsplash (unsplash.com)
 
