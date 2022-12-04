@@ -1,4 +1,4 @@
-This GitHub page is based on the template 'Editorial' from HTML5 UP. 
+This GitHub page is created based on the template 'Editorial' from HTML5 UP. 
 
 I customized the pages and some scripts according to my own needs, also added content to the page. All content on this page, including my resume, news reports and writing samples are my own work. 
 
