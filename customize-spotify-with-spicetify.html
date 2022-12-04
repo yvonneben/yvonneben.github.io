@@ -3,8 +3,6 @@
 	<head>
 		<title>Customize Spotify with Spicetify</title>
         <link rel="icon" href="images/spotify-icon-fontawesome.png" type="image/icon type">
-        <i class="fa-brands fa-spotify"></i>
-
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css"/>	
@@ -16,8 +14,8 @@
 
 				<!-- Main -->
 					<div id="main">
-						<div class="inner">
 
+						<div class="inner">
 							<!-- Header -->
 								<header id="header">
 									<a href="index.html" class="logo"><strong>Homepage</strong></a>
@@ -32,14 +30,26 @@
 										<h1>Customize Spotify with Spicetify</h1>	
                                     </header>
                                         <p>
-                                            This writing sample was an assignment for my study at the University of Washgington (2022-2023), it includes an installation guide of Spicetify (macOS) and how to customize Spotify themes with Spicetify. It was created based on <a href="https://spicetify.app/" target="_blank"> Spicetify's original doc.</a> <br><br>
-                                            <i>* Last update: December 2022.</i>
+                                            This writing sample was an assignment for my study at the University of Washgington (2022-2023), it includes an installation guide of Spicetify (macOS) and how to customize Spotify themes with Spicetify. It was created based on <a href="https://spicetify.app/" target="_blank"> Spicetify's original doc.</a> <br>
+                                            If you have any questions regarding this documentation, please contact me via <a href="mailto:yvonne.yangben@gmail.com" target="_blank">email</a>.<br><br>
+                                            <i>* Last update: December 4, 2022.</i>
                                         </p>
                                         
-                                        <section id="Install Spicetify">
-                                            <h2>Install Spicetify and Spicetify Marketplace</h2>
-                                            <section id="Install Spicetify from the Shell">
-                                                <h3>Install Spicetify from the Shell (pre-built binary)</h3>
+                                        <hr/>
+
+                                        <section>
+                                            <h2><a name="Install Spicetify and Spicetify Marketplace">Install Spicetify and Spicetify Marketplace</a></h2>
+                                            <section>
+                                                <p>
+                                                    There are two ways for you to install Spicetify and Spicetify Marketplace. 
+                                                    <ul>
+                                                        <li><a href="#Install Spicetify from the Shell">Install Spicetify from the Shell</a></li>
+                                                        <li><a href="#Install Spicetify with Homebrew">Install Spicetify with Homebrew</a></li>
+                                                    </ul>
+                                                    The Spicetify team recommends macOS users install Spicetify with Homebrew as you may see the <b><i>command not found: Spicetify</i></b> error after install it from the shell. Usually, this error means Spicetify was not installed correctly. For more information on this, view the issue <a href="https://github.com/spicetify/spicetify-cli/issues/1108" target="_blank"> command not found #1108 </a> on GitHub.
+                                                </p>
+
+                                                <h3><a name="Install Spicetify from the Shell">Install Spicetify from the Shell</a></h3>
                                                 <p>
                                                     To install Spicetify and Spicetify Marketplace, run the script below in your Terminal. Spotify Marketplace is where you can download the existing themes, extensions, and custom apps and apply them to your Spotify client.
                                                 </p>
@@ -49,20 +59,19 @@
                                                     curl -fsSL https://raw.githubusercontent.com/spicetify/spicetify-marketplace/main/resources/install.sh | sh
                                                 </code>
                                                 </p>
-                                                <p>
-                                                    However, you may see the <b>command not found: Spicetify</b> error after the installation. Usually, this means Spicetify was not installed correctly. To avoid this issue, the Spicetify team recommends macOS users install Spicetify with Homebrew. See details in issue <a href="https://github.com/spicetify/spicetify-cli/issues/1108" target="_blank"> command not found #1108 </a> on GitHub.
-                                                </p>
                                             </section>
+
 
                                             <!-- Install Spicetify with Homebrew-->
                                             <section id="Install Spicetify with Homebrew">
-                                                <h3>Install Spicetify with Homebrew</h3>
+                                                <h3><a name="Install Spicetify with Homebrew">Install Spicetify with Homebrew</a></h3>
                                                 <p>
                                                     For macOS users, installing Spicetify with <a href="https://brew.sh/" target="_blank">Homebrew</a> is the recommended way. However, you need to install Spotify Marketplace manually. 
                                                 </p>
 
                                                     <!-- If the user does not have homebrew-->
                                                     <section id="DoesNotHaveHomeBrew">
+                                                        <h4><a name="Install Homebrew">Install Homebrew</a></h4>
                                                             <p>
                                                                 <b>If you do not have Homebrew on your machine</b>, follow the steps below to install it:
                                                             </p>
@@ -97,7 +106,7 @@
                                                         <b>If you have Homebrew</b>, follow the steps below to install Spicetify and Spicetify Marketplace.
                                                         </p>
                                                         <!--Install Spicetify-->
-                                                        <h4>Install Spicetify</h4>
+                                                        <h4><a name="Install Spicetify">Install Spicetify</a></h4>
                                                         <p>
                                                             Run the script below in your Terminal to install Spicetify.
                                                         </p>
@@ -108,7 +117,7 @@
                                                         </p>
                                                         <!-- Install Spicetify Marketplace-->
                                                         <h4>
-                                                            Install Spicetify Marketplace
+                                                            <a name="Install Spicetify Marketplace">Install Spicetify Marketplace</a>
                                                         </h4>
                                                         <ol>
                                                             <li>
@@ -204,9 +213,12 @@
                                                     </section>
                                             </section>
                                         </section>
+
+                                        <hr/>
+
                                         <!-- Change Spotify Themes with Spicetify-->
                                         <section id="Change Spotify Themes">
-                                            <h2>Change Spotify Themes</h2>
+                                            <h2><a name="Change Spotify Themes">Change Spotify Themes</a></h2>
                                             <p>
                                                 This section contains information on how to change your Spotify themes with Spicetify. If you have not installed Spicetify, read <a href="customize-spotify-with-spicetify.html">Install Spicetify and Spicetify Marketplace</a> first.
                                             </p>
@@ -234,7 +246,7 @@
                                             <!-- Use the themes in the Spicetify Theme repository on GitHub-->
                                             <section id="Use the themes in the Spicetify Theme repository on GitHub">
                                                 <h3>
-                                                    Use the themes in the Spicetify Theme repository on GitHub
+                                                    <a name="Use the themes on GitHub">Use the themes in the Spicetify Theme repository on GitHub</a>
                                                 </h3>
                                                 <p>
                                                     Before you start, run the below command line to backup your Spotify client.
@@ -274,7 +286,7 @@
                                                 <!-- Change the themes with the command line-->
                                                 <section id="Change the thems with the command line">
                                                     <h4>
-                                                        Change themes with the command line
+                                                       <a name="Change themes with the command line">Change the themes with the command line</a> 
                                                     </h4>
                                                     <ol>
                                                         <li>
@@ -314,7 +326,7 @@
                                                 <!-- Change themes manually-->
                                                 <section id="Change themes manually">
                                                 <h4>
-                                                    Change themes manually
+                                                    <a name="Change themes manually">Change themes manually</a>
                                                 </h4>
                                                 <p>
                                                     Instead of changing the value of current_theme and color_scheme , and then change the themes with the command line, you can do the same by editing the config-xpui.ini file by following the steps below:
@@ -340,7 +352,7 @@
                                             <!-- Basics on creating themes-->
                                             <section id="creating themes">
                                                 <h3>
-                                                    Create themes - Basics
+                                                    <a name="Create themes">Create themes - Basics</a>
                                                 </h3>
                                                 <p>
                                                     This section contains basic information on how to create your own theme. Since this process requires lots of effort and every person has their desired themes to design, we are not able to cover everything in this section. We recommend you use the existing themes first. But if you have experience with CSS and would like to take on the challenges, do the below first before you start your journey.
@@ -360,7 +372,7 @@
                                                 <!-- Enable Spotify devs tool-->
                                                 <section id="enable spotify devs tool">
                                                     <h4>
-                                                        Enable the Spotify Developer Tool
+                                                        <a name="Enable the Spotify Developer Tool">Enable the Spotify Developer Tool</a>
                                                     </h4>
                                                     <p>
                                                         During the development process, you can access the Spotify developer tools to understand more about Spotify’s structure. <br>
@@ -386,15 +398,17 @@
                                             </section>
                                         </section>
 
+                                        <hr/>
+
                                         <!-- Troubleshooting-->
                                         <section id="troubleshooting">
                                             <h2>
-                                                Troubleshooting
+                                                <a name="Troubleshooting">Troubleshooting</a>
                                             </h2>
                                             <!-- Spotify client shows blank after applying the theme -->
                                             <section id="Spotify client shows blank after applying the theme">
                                                 <h3>
-                                                    Spotify client shows blank after applying the theme
+                                                    <a name="Spotify client shows blank after applying the theme">Spotify client shows blank after applying the theme</a>
                                                 </h3>
                                                 <p>
                                                     If your Spotify shows blank screen after you run spicetify apply, try the below solution first.
@@ -439,69 +453,63 @@
 
                                         </section>
 
+                                        <hr/>
+
                                         <!-- More information-->
-                                        <section id="More information">
+                                        <section id="More Information">
                                             <h2>
-                                                More information
+                                                <a name="More Information">More Information</a>
                                             </h2>
                                             <p>
                                                 For more information, please visit <a href="https://spicetify.app/docs/getting-started" target="_blank">Spicetify Docs</a>.
                                             </p>
                                         </section>
 								</section>
-
-
-
 						</div>
 					</div>
 
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
-                        <br><br><br><br>
+			<!-- Sidebar -->
+            <div id="sidebar" style="background-color:#000000">
+                <div class="inner">
 
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-                                        <li>
-                                            Install Spicetify and Spicetify Marketplace
-                                        </li>
-                                        <li>
-                                            Change Spotify Themes
-                                        </li>
-                                        <li>
-                                            Troubleshooting
-                                        </li>
-                                        <li>
-                                            More information
-                                        </li>
-									</ul>
-								</nav>
+                    <!-- Menu -->
+                        <nav id="menu">
+                            <header class="major">
+                                <br><br><br>
+                                <h2 style="color:#ffffff">Outline</h2>
+                            </header>
+                            <p>
+                                <a href="#Install Spicetify and Spicetify Marketplace" style="color:#ffffff"><h4>Install Spicetify and Spicetify Marketplace</h4></a>
+                                <a href="#Install Spicetify from the Shell" style="color:#ffffff">Install Spicetify from the Shell</a><br><br>
+                                <a href="#Install Spicetify with Homebrew" style="color:#ffffff">Install Spicetify with Homebrew</a><br>
+                                <a href="#Install Homebrew" style="color:#ffffff">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspInstall Homebrew</a><br>
+                                <a href="#Install Spicetify" style="color:#ffffff">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspInstall Spicetify</a><br>
+                                <a href="#Install Spicetify Marketplace" style="color:#ffffff">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspInstall Spicetify Marketplace</a><br>
+                            </p>
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>Feel free to contact me via email or find me on GitHub and LinkedIn.</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="mailto:yvonne.yangben@gmail.com" target="_blank">yvonne.yangben@gmail.com</a></li>
-										<li class="icon brands fa-github"><a href="https://github.com/yvonneben" target="_blank"> GitHub - Yvonne Ben</a></li>
-                                        <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/yvonne-ben/" target="_blank">LinkedIn - Yvonne Ben</a></li>
-      
-									</ul>
-								</section>
+                            <p>
+                                <a href="#Change Spotify Themes" style="color:#ffffff"><h4>Change Spotify Themes</h4></a>
+                                <a href="#Use the themes on GitHub" style="color:#ffffff">Use the themes in the Spicetify Theme repository on GitHub</a><br>
+                                <a href="#Change themes with the command line" style="color:#ffffff">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspChange themes with the command line</a><br>
+                                <a href="#Change themes manually" style="color:#ffffff">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspChange themes manually</a><br><br>
 
-							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; Yvonne Ben. Some photographs are from <a href="unsplash.com" target="_blank">Unsplash</a>, and some were taken by myself.
-								</footer>
+                                <a href="#Create themes" style="color:#ffffff">Create themes - Basics</a><br>
+                                <a href="#Enable the Spotify Developer Tool" style="color:#ffffff">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEnable the Spotify Developer Tool</a>
+                            </p>
+                            
+                            <p>
+                                <a href="#Troubleshooting" style="color:#ffffff"><h4>Troubleshooting</h4></a>
+                                <a href="#Spotify client shows blank after applying the theme" style="color:#ffffff">Spotify client shows blank after applying the theme</a>
+                            </p>
 
-						</div>
-					</div>
+                            <p>
+                                <a href="#More Information" style="color:#ffffff"><h4>More Information</h4></a>
+                            </p>
+                        </nav>
+
+
+                </div>
+            </div>
 
 			</div>
 
