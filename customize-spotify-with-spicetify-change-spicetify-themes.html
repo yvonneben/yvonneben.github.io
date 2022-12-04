@@ -1,0 +1,288 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Customize Spotify with Spicetify</title>
+        <link rel="icon" href="images/spotify-icon-fontawesome.png" type="image/icon type">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css"/>	
+  </head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<div class="inner">
+							<!-- Header -->
+                            <header id="header">
+                                <a href="https://yvonneben.github.io/" class="logo"><strong>Homepage</strong></a>
+                                <ul class="icons">
+                                  <li><a href="https://www.linkedin.com/in/yvonne-ben/" target="_blank" class="icon brands fa-linkedin" style="color: #879b69;"><span class="label">LinkedIn</span></a></li>
+                                <li><a href="https://github.com/yvonneben" target="_blank" class="icon brands fa-github" style="color:#879b69"><span class="label">Github</span></a></li>
+                                </ul>
+                            </header>
+<!--
+                                <section id="Customize Spotify with Spicetify">
+									<header>
+										<h1>Customize Spotify with Spicetify</h1>	
+                                    </header>
+                                        <p>
+                                            This writing sample was an assignment for my study at the University of Washgington (2022-2023), it includes an installation guide of Spicetify (macOS) and how to customize Spotify themes with Spicetify. It was created based on <a href="https://spicetify.app/" target="_blank"> Spicetify's original doc.</a> <br>
+                                            If you have any questions regarding this documentation, please contact me via <a href="mailto:yvonne.yangben@gmail.com" target="_blank">email</a>.<br><br>
+                                            <i>* Last update: December 4, 2022.</i>
+                                        </p>
+       -->
+                                        <!-- Change Spotify Themes with Spicetify-->
+                                        <section id="Change Spotify Themes">
+                                            <h2><a name="Change Spotify Themes">Change Spotify Themes</a></h2>
+                                            <p>
+                                                This section contains information on how to change your Spotify themes with Spicetify. If you have not installed Spicetify, read <a href="customize-spotify-with-spicetify.html">Install Spicetify and Spicetify Marketplace</a> first.
+                                            </p>
+                                            <p>
+                                                You can change your Spotify theme with Spicetify Marketplace. Alternatively, you can download the themes from the Spiceity Theme repository on GitHub and apply it to your Spotify client with the command line.
+                                            </p>
+
+                                            
+                                            <!-- Change themes with the Marketplace-->
+                                            <section>
+                                                <ol>
+                                                    <li>
+                                                        Enable the Themes tab in the Spicetify Marketplace.
+                                                    </li>
+                                                    <li>
+                                                        Download the theme and apply it to your Spotify client.
+                                                    </li>
+                                                    <li>
+                                                        Restart Spotify.
+                                                    </li>
+                                                </ol>
+                                                <p>
+                                                    <b>Note</b>: You may experience delays when you try to access the content in the Themes tab. If you are having issues changing your themes within Spotify with Marketplace, try the below alternative way.
+                                                </p>
+                                            </section>
+
+                                            <hr/>
+
+
+                                            <!-- Use the themes in the Spicetify Theme repository on GitHub-->
+                                            <section id="Use the themes in the Spicetify Theme repository on GitHub">
+                                                <h3>
+                                                    <a name="Use the themes on GitHub">Use the themes in the Spicetify Theme repository on GitHub</a>
+                                                </h3>
+                                                <p>
+                                                    Before you start, run the below command line to backup your Spotify client.
+                                                </p>
+                                                <p>
+                                                    <code>
+                                                        spicetify backup
+                                                    </code>
+                                                </p>
+                                                <p>
+                                                    Download the themes from the spicetify-themes repository on GitHub.
+                                                </p>
+                                                <ol>
+                                                    <li>
+                                                        Visit https://github.com/spicetify/spicetify-themes
+                                                    </li>
+                                                    <li>
+                                                        Click <b>Codes</b> (green button)
+                                                    </li>
+                                                    <li>
+                                                        In the dropdown menu, click <b>Download ZIP</b>
+                                                    </li>
+                                                    <li>
+                                                        Extract the zip file.
+                                                    </li>
+                                                    <li>
+                                                        Move the resulting folder to the Themes folder under the Spicetify Config directory.
+                                                    </li>
+                                                    
+                                                </ol>
+                                                <p>
+                                                    See other download options on <a href="https://github.com/spicetify/spicetify-themes/blob/master/README.md" target="_blank"> Spicecity Community Themes</a>.
+                                                </p>
+                                                <p>
+                                                    After you download the themes, you can change your themes with the command line. Alternatively, you can change the <b>config-xpui.ini</b> file manually, then run the command to change your Spotify theme.
+                                                </p>
+                                                <!-- Change the themes with the command line-->
+                                                <section id="Change the thems with the command line">
+                                                    <h4>
+                                                       <a name="Change themes with the command line">Change the themes with the command line</a> 
+                                                    </h4>
+                                                    <ol>
+                                                        <li>
+                                                            <p>
+                                                                Run the below command to change your theme. Replace THEME_NAME with the desired theme’s name. For example, to change the theme to ‘Flow’, run <b>spicetify config current_theme Flow</b>
+                                                            </p>
+                                                            <p>
+                                                                <code>
+                                                                    spicetify config current_theme THEME_NAME           
+                                                                </code>
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                           <p>
+                                                            If the theme you want to use has multiple color schemes, run the below command to switch your theme between different colors. Replace SCHEME_NAME with the desired color. <br>
+                                                            For example, if you are using the theme ‘Flow’, you can change the theme color to ‘violet’ with <b> spicetify config color_scheme violet</b>
+                                                            <p>
+                                                            <code>
+                                                                spicetify config color_scheme SCHEME_NAME
+                                                            </code> 
+                                                            </p>
+                                                        </li>
+                                                        <li>
+                                                            <p>
+                                                                Run the below command to apply the theme to your Spotify client.
+                                                            </p>
+                                                            <p>
+                                                                <code>
+                                                                    spicetify apply
+                                                                </code>
+                                                            </p>
+                                                        </li>
+                                                    
+                                                    </ol>
+                                                </section>
+                                                
+
+                                                <!-- Change themes manually-->
+                                                <section id="Change themes manually">
+                                                <h4>
+                                                    <a name="Change themes manually">Change themes manually</a>
+                                                </h4>
+                                                <p>
+                                                    Instead of changing the value of current_theme and color_scheme , and then change the themes with the command line, you can do the same by editing the config-xpui.ini file by following the steps below:
+                                                </p>
+                                                <ol>
+                                                    <li>
+                                                        Run spicetify config-dir to go to the Spicetify Config directory. 
+                                                    </li>
+                                                    <li>
+                                                        Open the config-xpui.ini file with the TextEdit application on your Mac. Alternatively, you can open the file with Visual Studio Code or any other editors if you have them installed. 
+                                                    </li>
+                                                    <li>
+                                                        Change the value of current_theme and color_scheme.
+                                                    </li>
+                                                    <li>
+                                                        Save the config-xpui.ini file.
+                                                    </li>
+                                                    <li>
+                                                        Run spicetify apply in your Terminal to apply the theme.
+                                                </ol>
+                                                </section>
+                                            </section>
+
+                                            <hr/>
+
+                                            
+                                            <!-- Basics on creating themes-->
+                                            <section id="creating themes">
+                                                <h3>
+                                                    <a name="Create themes">Create themes - Basics</a>
+                                                </h3>
+                                                <p>
+                                                    This section contains basic information on how to create your own theme. Since this process requires lots of effort and every person has their desired themes to design, we are not able to cover everything in this section. We recommend you use the existing themes first. But if you have experience with CSS and would like to take on the challenges, do the below first before you start your journey.
+                                                </p>
+                                                <ol>
+                                                    <li>
+                                                        Create a new folder under the Spicetify Themes directory.
+                                                    </li>
+                                                    <li>
+                                                        Name the folder as the theme’s name. Add the below four files to this folder.
+                                                    </li>
+                                                    <li>
+                                                        Edit the color.ini and user.css files to create your own themes. 
+                                                    </li>
+                                                </ul>
+                                                <br>
+                                                <!-- Enable Spotify devs tool-->
+                                                <section id="enable spotify devs tool">
+                                                    <h4>
+                                                        <a name="Enable the Spotify Developer Tool">Enable the Spotify Developer Tool</a>
+                                                    </h4>
+                                                    <p>
+                                                        During the development process, you can access the Spotify developer tools to understand more about Spotify’s structure. <br>
+                                                    </p>
+                                                    <ol>
+                                                        <li>
+                                                            Run the below command to enable the Spotify developer tool.
+                                                        </li>
+                                                        <p>
+                                                            <code>
+                                                                spicetify enable-devtools
+                                                            </code>
+                                                        </p>
+                                                        <li>
+                                                            Open the developer tool with command+shift+I.
+                                                        </li>
+                                                    </ol>
+                                                    <p>
+                                                        Alternatively, click <b>Develop</b> in the menu bar and click <b>Developer tool</b> in the dropdown menu.
+                                                    </p>
+
+                                                </section>
+                                            </section>
+                                        </section>
+
+                                        <hr/>
+								</section>
+						</div>
+					</div>
+
+			<!-- Sidebar -->
+            <div id="sidebar" style="background-color:#2f2f2f;">
+                <div class="inner">
+
+                    <!-- Menu -->
+                        <nav id="menu">
+                            <header class="major">
+                                <br><br><br>
+                                <h3 style="color:#ffffff">Customize Spotify with Spicetify</h3>
+                            </header>
+                            <p>
+                                <a href="customize-spotify-with-spicetify-install-spicetify.html" style="color:#ffffff"><h4>Install Spicetify and Spicetify Marketplace</h4></a>
+                                <a href="customize-spotify-with-spicetify-install-spicetify.html#Install Spicetify from the Shell" style="color:#ffffff">Install Spicetify from the Shell</a><br><br>
+                                <a href="customize-spotify-with-spicetify-install-spicetify.html#Install Spicetify with Homebrew" style="color:#ffffff">Install Spicetify with Homebrew</a><br>
+                                <a href="customize-spotify-with-spicetify-install-spicetify.html#Install Homebrew" style="color:#ffffff">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspInstall Homebrew</a><br>
+                                <a href="customize-spotify-with-spicetify-install-spicetify.html#Install Spicetify" style="color:#ffffff">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspInstall Spicetify</a><br>
+                                <a href="customize-spotify-with-spicetify-install-spicetify.html#Install Spicetify Marketplace" style="color:#ffffff">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspInstall Spicetify Marketplace</a><br>
+                            </p>
+
+                            <p>
+                                <a href="#Change Spotify Themes" style="color:#ffffff"><h4>Change Spotify Themes</h4></a>
+                                <a href="#Use the themes on GitHub" style="color:#ffffff">Use the themes in the Spicetify Theme repository on GitHub</a><br>
+                                <a href="#Change themes with the command line" style="color:#ffffff">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspChange themes with the command line</a><br>
+                                <a href="#Change themes manually" style="color:#ffffff">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspChange themes manually</a><br><br>
+
+                                <a href="#Create themes" style="color:#ffffff">Create themes - Basics</a><br>
+                                <a href="#Enable the Spotify Developer Tool" style="color:#ffffff">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEnable the Spotify Developer Tool</a>
+                            </p>
+                            
+                            <p>
+                                <a href="customize-spotify-with-spicetify-troubleshooting.html" style="color:#ffffff"><h4>Troubleshooting</h4></a>
+                                <a href="customize-spotify-with-spicetify-troubleshooting.html#Spotify client shows blank after applying the theme" style="color:#ffffff">Spotify client shows blank after applying the theme</a>
+                            </p>
+
+                            <p>
+                                <a href="customize-spotify-with-spotify-more-information.html" style="color:#ffffff"><h4>More Information</h4></a>
+                            </p>
+                        </nav>
+
+
+                </div>
+            </div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

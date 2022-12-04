@@ -1,0 +1,278 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Customize Spotify with Spicetify</title>
+        <link rel="icon" href="images/spotify-icon-fontawesome.png" type="image/icon type">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css"/>	
+  </head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+
+						<div class="inner">
+							<!-- Header -->
+                            <header id="header">
+                                <a href="https://yvonneben.github.io/" class="logo"><strong>Homepage</strong></a>
+                                <ul class="icons">
+                                  <li><a href="https://www.linkedin.com/in/yvonne-ben/" target="_blank" class="icon brands fa-linkedin" style="color: #879b69;"><span class="label">LinkedIn</span></a></li>
+                                <li><a href="https://github.com/yvonneben" target="_blank" class="icon brands fa-github" style="color:#879b69"><span class="label">Github</span></a></li>
+                                </ul>
+                            </header>
+
+                                <section id="Customize Spotify with Spicetify">
+									<header>
+										<h1>Customize Spotify with Spicetify</h1>	
+                                    </header>
+                                        <p>
+                                            This writing sample was an assignment for my study at the University of Washgington (2022-2023), it includes an installation guide of Spicetify (macOS) and how to customize Spotify themes with Spicetify. It was created based on <a href="https://spicetify.app/" target="_blank"> Spicetify's original doc.</a> <br>
+                                            If you have any questions regarding this documentation, please contact me via <a href="mailto:yvonne.yangben@gmail.com" target="_blank">email</a>.<br><br>
+                                            <i>* Last update: December 4, 2022.</i>
+                                        </p>
+                                        
+                                        <hr/>
+
+                                        <section>
+                                            <h2><a name="Install Spicetify and Spicetify Marketplace">Install Spicetify and Spicetify Marketplace</a></h2>
+                                            <section>
+                                                <p>
+                                                    There are two ways for you to install Spicetify and Spicetify Marketplace. 
+                                                    <ul>
+                                                        <li><a href="#Install Spicetify from the Shell">Install Spicetify from the Shell</a></li>
+                                                        <li><a href="#Install Spicetify with Homebrew">Install Spicetify with Homebrew</a></li>
+                                                    </ul>
+                                                    The Spicetify team recommends macOS users install Spicetify with Homebrew as you may see the <b><i>command not found: Spicetify</i></b> error after install it from the shell. Usually, this error means Spicetify was not installed correctly. For more information on this, view the issue <a href="https://github.com/spicetify/spicetify-cli/issues/1108" target="_blank"> command not found #1108 </a> on GitHub.
+                                                </p>
+                                                
+                                                <hr/>
+
+                                                <h3><a name="Install Spicetify from the Shell">Install Spicetify from the Shell</a></h3>
+                                                <p>
+                                                    To install Spicetify and Spicetify Marketplace, run the script below in your Terminal. Spotify Marketplace is where you can download the existing themes, extensions, and custom apps and apply them to your Spotify client.
+                                                </p>
+                                                <p>
+                                                <code>
+                                                    curl -fsSL https://raw.githubusercontent.com/spicetify/spicetify-cli/master/install.sh | sh<br>
+                                                    curl -fsSL https://raw.githubusercontent.com/spicetify/spicetify-marketplace/main/resources/install.sh | sh
+                                                </code>
+                                                </p>
+                                            </section>
+                                                <hr/>
+
+
+                                            <!-- Install Spicetify with Homebrew-->
+                                            <section id="Install Spicetify with Homebrew">
+                                                <h3><a name="Install Spicetify with Homebrew">Install Spicetify with Homebrew</a></h3>
+                                                <p>
+                                                    For macOS users, installing Spicetify with <a href="https://brew.sh/" target="_blank">Homebrew</a> is the recommended way. However, you need to install Spotify Marketplace manually. 
+                                                </p>
+
+                                                    <!-- If the user does not have homebrew-->
+                                                    <section id="DoesNotHaveHomeBrew">
+                                                        <h4><a name="Install Homebrew">Install Homebrew</a></h4>
+                                                            <p>
+                                                                <b>If you do not have Homebrew on your machine</b>, follow the steps below to install it:
+                                                            </p>
+                                                            <ol>
+                                                                <li>
+                                                                    Install the command line tools for Xcode. Skip this if you already have Xcode.<br>
+                                                                    Run the script below in your macOS Terminal. Alternatively, you can <a href="https://apps.apple.com/us/app/xcode/id497799835" target="_blank">Install Xcode from Mac AppStore</a> if you prefer.<br>
+                                                                    <br>
+                                                                    <code>
+                                                                        xcode-select --install
+                                                                    </code>    
+                                                                </li>
+                                                                <br>
+                                                                <li>
+                                                                    Install Homebrew. <br>
+                                                                    Run the script below in your Terminal. <br>
+                                                                    <br>
+                                                                    <code>
+                                                                        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+                                                                    </code>
+                                                                    <p>
+                                                                        See <a href="https://docs.brew.sh/Installation" target="_blank">Installation - Homebrew</a> for other installation options.<br><br>
+                                                                        <b>Note</b>: For users based in China, if you are having issues installing Homebrew by following the above instructions, try the steps listed in <a href="https://zhuanlan.zhihu.com/p/111014448" target="_blank">this post</a> (in Chinese) on Zhihu.
+                                                                    </p>
+                                                                </li> 
+                                                            </ol>      
+                                                    </section>
+                                                    
+                                                    <hr/>
+
+                                                    <!-- If the user has HomeBrew-->
+                                                    <section id="HasHomeBrew">
+                                                        </p>
+                                                        <b>If you have Homebrew</b>, follow the steps below to install Spicetify and Spicetify Marketplace.
+                                                        </p>
+                                                        <!--Install Spicetify-->
+                                                        <h4><a name="Install Spicetify">Install Spicetify</a></h4>
+                                                        <p>
+                                                            Run the script below in your Terminal to install Spicetify.
+                                                        </p>
+                                                        <p>
+                                                            <code>
+                                                                brew install khanhas/tap/spicetify-cli
+                                                            </code>
+                                                        </p>
+                                                        <!-- Install Spicetify Marketplace-->
+                                                        <h4>
+                                                            <a name="Install Spicetify Marketplace">Install Spicetify Marketplace</a>
+                                                        </h4>
+                                                        <ol>
+                                                            <li>
+                                                                <p>
+                                                                    Download the latest release from <a href="https://github.com/spicetify/spicetify-marketplace/releases" target="_blank">GitHub</a>. The asset’s name is ‘spicetify-marketplace.zip’.
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>
+                                                                    Extract the zip file, and you will get the resulting folder ‘spicetify-marketplace-dist’.
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>
+                                                                    Move the resulting folder to your Spicetify CustomApps folder and rename it as ‘marketplace’. The path for the Spicetify CustomApps folder is 
+                                                                </p>
+                                                                <p>
+                                                                    <code>
+                                                                        ~/.config/spicetify/CustomApps/ or $SPICETIFY_CONFIG/CustomApps/
+                                                                    </code>
+                                                                </p>
+                                                                <p>
+                                                                    <b>Note</b>: If you having issues finding the Spicetify CustomApps folder, try the steps below: <br>
+                                                                    <ol>
+                                                                        <li>
+                                                                            <p>
+                                                                                Run the below command to go to the Spicetify Config directory. 
+                                                                            </p>
+                                                                            <p>
+                                                                                <code>
+                                                                                    spicetify config-dir
+                                                                                </code>
+                                                                            </p>
+                                                                        </li>
+                                                                        <li>
+                                                                            <p>
+                                                                                In the Config directory, open the folder CustomApps.
+                                                                            </p>
+                                                                        </li>
+                                                                    </ol>
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>
+                                                                    Apply one theme first to ensure the Marketplace can install themes correctly. To do so, follow the steps below:
+                                                                </p>
+                                                                <ol>
+                                                                    <li>
+                                                                        <p>
+                                                                            Go to the ‘Themes’ folder in the Spicetify Config directory. In the ‘Themes’ directory, create a new folder and name it as ‘marketplace’.
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>
+                                                                            Download <a href="https://github.com/spicetify/spicetify-marketplace/blob/main/resources/color.ini" target="_blank"> the color scheme file </a> and save it in the ‘marketplace’ folder.
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>
+                                                                            Run the below commands in your Terminal to apply the ‘martketplace’ theme.
+                                                                        </p>
+                                                                        <p>
+                                                                            <code>
+                                                                                spicetify config inject_css 1<br>
+                                                                                spicetify config replace_colors 1<br>
+                                                                                spicetify config current_theme marketplace
+                                                                            </code>
+                                                                        </p>
+                                                                    </li>
+                                                                </ol>
+                                                                <p>
+                                                                    <b>Note</b>: You can also manually edit the color scheme file and change the current theme using the command spicetify config current_theme marketplace. See details in Change themes manually.
+                                                                </p>
+                                                            </li>
+                                                            <li>
+                                                                <p>
+                                                                    After you put the ‘marketplace’ folder in the CustomApps directory and applied one theme, run the below command to enable Spicetify Marketplace:
+                                                                </p>
+                                                                <p>
+                                                                    <code>
+                                                                        spicetify config custom_apps marketplace<br>
+                                                                        spicetify apply
+                                                                    </code>
+                                                                </p>
+                                                                <p>
+                                                                    You will see Marketplace appear in the left-hand sidebar in Spotify Client. Below is an example:
+                                                                </p>
+                                                            </li>
+                                                        </ol>
+                                                        <p>
+                                                            After you install Spicetify, run <code>spicetify upgrade</code> in the Terminal to ensure your Spicetify is the latest version. To access the complete Spicetify command list, run <code>spicetify -h</code>.
+                                                        </p>
+                                                    </section>
+                                            </section>
+                                        </section>
+								</section>
+						</div>
+					</div>
+
+			<!-- Sidebar -->
+            <div id="sidebar" style="background-color:#2f2f2f;">
+                <div class="inner">
+
+                    <!-- Menu -->
+                        <nav id="menu">
+                            <header class="major">
+                                <br><br><br>
+                                <h3 style="color:#ffffff">Customize Spotify with Spicetify</h3>
+                            </header>
+                            <p>
+                                <a href="#Install Spicetify and Spicetify Marketplace" style="color:#ffffff"><h4>Install Spicetify and Spicetify Marketplace</h4></a>
+                                <a href="#Install Spicetify from the Shell" style="color:#ffffff">Install Spicetify from the Shell</a><br><br>
+                                <a href="#Install Spicetify with Homebrew" style="color:#ffffff">Install Spicetify with Homebrew</a><br>
+                                <a href="#Install Homebrew" style="color:#ffffff">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspInstall Homebrew</a><br>
+                                <a href="#Install Spicetify" style="color:#ffffff">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspInstall Spicetify</a><br>
+                                <a href="#Install Spicetify Marketplace" style="color:#ffffff">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspInstall Spicetify Marketplace</a><br>
+                            </p>
+
+                            <p>
+                                <a href="customize-spotify-with-spicetify-change-spicetify-themes.html" style="color:#ffffff"><h4>Change Spotify Themes</h4></a>
+                                <a href="customize-spotify-with-spicetify-change-spicetify-themes.html#Use the themes on GitHub" style="color:#ffffff">Use the themes in the Spicetify Theme repository on GitHub</a><br>
+                                <a href="customize-spotify-with-spicetify-change-spicetify-themes.html#Change themes with the command line" style="color:#ffffff">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspChange themes with the command line</a><br>
+                                <a href="customize-spotify-with-spicetify-change-spicetify-themes.html#Change themes manually" style="color:#ffffff">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspChange themes manually</a><br><br>
+
+                                <a href="customize-spotify-with-spicetify-change-spicetify-themes.html#Create themes" style="color:#ffffff">Create themes - Basics</a><br>
+                                <a href="customize-spotify-with-spicetify-change-spicetify-themes.html#Enable the Spotify Developer Tool" style="color:#ffffff">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEnable the Spotify Developer Tool</a>
+                            </p>
+                            
+                            <p>
+                                <a href="customize-spotify-with-spicetify-troubleshooting.html" style="color:#ffffff"><h4>Troubleshooting</h4></a>
+                                <a href="customize-spotify-with-spicetify-troubleshooting.html#Spotify client shows blank after applying the theme" style="color:#ffffff">Spotify client shows blank after applying the theme</a>
+                            </p>
+
+                            <p>
+                                <a href="customize-spotify-with-spotify-more-information.html" style="color:#ffffff"><h4>More Information</h4></a>
+                            </p>
+                        </nav>
+
+
+                </div>
+            </div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
